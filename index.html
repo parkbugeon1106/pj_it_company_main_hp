@@ -1,392 +1,157 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>PJ IT COMPANY | 박부건 & 정우진</title>
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="logo.png" />
-<link rel="shortcut icon" type="image/png" href="logo.png" />
-<link rel="apple-touch-icon" href="logo.png" />
+  <!-- ✅ Google Search Console Verification -->
+  <meta name="google-site-verification" content="iZ44_BcqVp6a52sGeeBxd3FSDDERhlBNqARlosUwWjc" />
 
-<!-- Open Graph (카카오톡, 페이스북 등 링크 미리보기) -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="PJ IT COMPANY | 박부건 & 정우진" />
-<meta property="og:description" content="기술과 투자로 세상을 바꾸는 IT 기업" />
-<meta property="og:image" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/logo.png" />
-<meta property="og:url" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/" />
+  <!-- SEO -->
+  <title>PJ IT COMPANY | 박부건 & 정우진</title>
+  <meta name="description" content="PJ IT COMPANY는 실시간 데이터, AI 개발, 웹·서버 시스템을 구축하는 기술 중심 IT 기업입니다." />
+  <meta name="keywords" content="PJ IT COMPANY, 박부건, 정우진, IT기업, AI개발, 웹개발, 서버, 암호화폐" />
+  <meta name="author" content="PJ IT COMPANY" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="PJ IT COMPANY | 박부건 & 정우진" />
-<meta name="twitter:description" content="기술과 투자로 세상을 바꾸는 IT 기업" />
-<meta name="twitter:image" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/logo.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-<style>
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PJ IT COMPANY | 박부건 & 정우진" />
+  <meta property="og:description" content="기술과 투자로 세상을 바꾸는 IT 기업" />
+  <meta property="og:image" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/logo.png" />
+  <meta property="og:url" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/" />
 
-:root {
-  --bg: #080000;
-  --accent: #3d0000;
-  --card: #390909;
-  --button: #2b0000;
-  --text: #efefef;
-}
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PJ IT COMPANY | 박부건 & 정우진" />
+  <meta name="twitter:description" content="기술과 투자로 세상을 바꾸는 IT 기업" />
+  <meta name="twitter:image" content="https://parkbugeon1106.github.io/pj_it_company_main_hp/logo.png" />
 
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background-color:var(--bg)!important;
-  font-family:'Poppins',sans-serif;
-  color:var(--text);
-  overflow-x:hidden;
-  font-size:17px;
-}
-.glow{
-  text-shadow:
-    0 0 10px var(--accent),
-    0 0 25px var(--accent),
-    0 0 45px var(--accent);
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-/* Header */
-header{
-  position:fixed;top:0;left:0;width:100%;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:15px 40px;
-  background:#080000;
-  border-bottom:2px solid var(--accent);
-  z-index:10;
-}
-header h1{
-  font-family:'Orbitron',sans-serif;
-  color:var(--accent);
-  font-size:40px;
-  text-shadow:0 0 15px var(--accent),0 0 30px var(--accent);
-  cursor:pointer;
-}
-nav a{
-  margin:0 12px;
-  color:var(--text);
-  text-decoration:none;
-  font-weight:600;
-  font-size:18px;
-}
-nav a:hover{color:var(--accent);text-shadow:0 0 20px var(--accent);}
+  <style>
+    @font-face {
+      font-family: 'Pretendard';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+      font-weight: 600;
+      font-display: swap;
+    }
 
-/* Sections */
-section{
-  padding:120px 20px 80px;
-  max-width:1000px;
-  margin:auto;
-  text-align:center;
-}
-h2{
-  color:var(--accent);
-  text-shadow:0 0 30px var(--accent);
-  margin-bottom:15px;
-  font-size:28px;
-}
+    :root {
+      --bg: #080000;
+      --accent: #3d0000;
+      --card: #390909;
+      --button: #2b0000;
+      --text: #efefef;
+    }
 
-/* Cards */
-.card, .team-card{
-  background:var(--card);
-  border:none;
-  border-radius:15px;
-  padding:20px;
-  margin:20px auto;
-  color:var(--text);
-  box-shadow:0 0 25px rgba(153,0,18,0.4);
-  transition:0.3s;
-  font-size:17px;
-}
-.card:hover,.team-card:hover{
-  transform:scale(1.02);
-  box-shadow:0 0 35px var(--accent);
-}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      font-size: 17px;
+      overflow-x: hidden;
+    }
 
-/* Buttons */
-button{
-  background:var(--button);
-  border:none;
-  color:var(--text);
-  padding:10px 20px;
-  border-radius:8px;
-  font-weight:600;
-  font-size:17px;
-  cursor:pointer;
-  transition:0.3s;
-  text-shadow:0 0 10px var(--accent);
-}
-button:hover{
-  background:var(--accent);
-  color:#fff;
-  box-shadow:0 0 25px var(--accent);
-}
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 15px 40px;
+      background: var(--bg);
+      border-bottom: 2px solid var(--accent);
+      z-index: 10;
+    }
 
-/* Logo */
-.logo-img{
-  width:150px;
-  margin-top:20px;
-  filter:drop-shadow(0 0 25px var(--accent));
-}
-.pretendard-text{
-  font-family:'Pretendard',sans-serif;
-  font-weight:600;
-  font-size:51px;
-  color:#fff;
-  margin-top:20px;
-  text-shadow:
-    0 0 20px #990012,
-    0 0 50px #990012,
-    0 0 100px #990012;
-}
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--accent);
+      font-size: 36px;
+      cursor: pointer;
+    }
 
-/* Modal */
-#profileModal.show{display:flex!important;}
-#profileModal>div{
-  background:var(--card);
-  border:none;
-  border-radius:15px;
-  padding:30px;
-  color:var(--text);
-  box-shadow:0 0 30px var(--accent);
-  font-size:17px;
-}
+    nav a {
+      margin: 0 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-/* Footer */
-footer{
-  text-align:center;
-  padding:20px;
-  color:#aaa;
-  background:var(--bg);
-  border-top:1px solid var(--accent);
-  font-size:15px;
-}
-@media(max-width:768px){
-  body{font-size:14px;}
-  h2{font-size:22px;}
-  header h1{font-size:26px;}
-  nav a{font-size:15px;}
-  .pretendard-text{font-size:34px;}
-}
-</style>
+    section {
+      padding: 120px 20px 80px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      border-top: 1px solid var(--accent);
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-  <h1 class="glow" onclick="scrollToSection('home')">PJ IT COMPANY</h1>
+  <h1 onclick="document.getElementById('home').scrollIntoView()">PJ IT COMPANY</h1>
   <nav>
     <a href="#home">Home</a>
     <a href="#projects">Projects</a>
     <a href="#team">Team</a>
-    <a href="#community">Community</a>
   </nav>
 </header>
 
 <section id="home">
-  <h2 class="glow">안녕하세요, PJ IT COMPANY 입니다.</h2>
-  <img src="logo.png" alt="로고" class="logo-img" />
-  <p class="pretendard-text">기술과 투자로 세상을 바꾸는 IT 기업</p>
+  <h2>안녕하세요, PJ IT COMPANY 입니다.</h2>
+  <img src="logo.png" alt="PJ IT COMPANY 로고" width="160" />
+  <p style="font-family:'Pretendard'; font-size:32px; margin-top:20px;">
+    기술과 투자로 세상을 바꾸는 IT 기업
+  </p>
 </section>
 
 <section id="projects">
-  <h2 class="glow">프로젝트</h2>
+  <h2>프로젝트</h2>
   <div class="card">
-    <h3 style="text-align: center;">실시간 코인 가격 웹사이트 <span style="color:var(--accent);"></span></h3>
-    <a href="https://parkbugeon1106.github.io/PJ-IT-COMPANY_COIN-WEBSITE/index.html"
-       target="_blank"
-       style="display:inline-block; margin-top:8px; background:var(--accent); color:#fff; padding:8px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-       🔗 바로가기
+    <h3>실시간 코인 가격 웹사이트</h3>
+    <a href="https://parkbugeon1106.github.io/PJ-IT-COMPANY_COIN-WEBSITE/index.html" target="_blank">
+      🔗 바로가기
     </a>
   </div>
 </section>
 
-
 <section id="team">
-  <h2 class="glow">팀원 소개</h2>
-  <div class="team-card">
-    <h3>정우진</h3>
-    <p><b>직책:</b> CEO / AI개발자 / 하드웨어개발자</p>
-    <p><b>언어:</b> 한국어, Python, C, C++, C#, Java, JavaScript, Wolfram, HTML, CSS</p>
-    <button onclick="showProfile('정우진')">경력</button>
+  <h2>팀</h2>
+  <div class="card">
+    <p><b>박부건</b> – CEO / AI · Web Developer</p>
+    <p><b>정우진</b> – CEO / AI · Hardware Developer</p>
   </div>
-  <div class="team-card">
-    <h3>박부건</h3>
-    <p><b>직책:</b> CEO / AI개발자 / 웹 개발자</p>
-    <p><b>언어:</b> Python, Java, JavaScript, C, C++, Go, C#,HTML, go,</p>
-    <button onclick="showProfile('박부건')">경력</button>
-  </div>
-
-</section>
-
-<section id="community">
-  <h2 class="glow">커뮤니티</h2>
-  <div id="loginBox">
-    <button onclick="login()">로그인</button>
-    <button onclick="logout()">로그아웃</button>
-  </div>
-
-  <div id="noticeWrite" style="display:none;">
-    <h3>공지 작성</h3>
-    <input id="noticeTitle" placeholder="제목" style="width:90%;padding:10px;border-radius:10px;border:none;margin:5px;"><br>
-    <textarea id="noticeContent" placeholder="내용" style="width:90%;padding:10px;border-radius:10px;border:none;margin:5px;"></textarea><br>
-    <button onclick="writeNotice()">등록</button>
-  </div>
-
-  <h3>공지사항</h3>
-  <div id="noticeList" class="card"></div>
-
-  <h3>질문 게시판</h3>
-  <input id="qName" placeholder="이름" style="width:90%;padding:10px;border-radius:10px;border:none;margin:5px;"><br>
-  <textarea id="qText" placeholder="질문을 작성하세요" style="width:90%;padding:10px;border-radius:10px;border:none;margin:5px;"></textarea><br>
-  <button onclick="ask()">등록</button>
-  <div id="qList"></div>
 </section>
 
 <footer>
-  © 2025 PJ IT COMPANY | 마지막 수정 : <span id="lastModified"></span>
+  © 2025 PJ IT COMPANY
 </footer>
 
-<div id="profileModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
-background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
-  <div>
-    <h2 id="modalName"></h2>
-    <ul id="modalContent"></ul>
-    <div style="text-align:center;margin-top:20px;"><button onclick="closeProfile()">닫기</button></div>
-  </div>
-</div>
-
-<!-- ✅ Firebase CDN 버전 (GitHub Pages 호환용) -->
-<script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-auth-compat.js"></script>
-
-<script>
-const firebaseConfig = {
-  apiKey: "AIzaSyCrq_RAL7jOWvX0f6yA7rEUflaxqPSFv9Q",
-  authDomain: "pjitcompany-hp.firebaseapp.com",
-  projectId: "pjitcompany-hp",
-  storageBucket: "pjitcompany-hp.appspot.com",
-  messagingSenderId: "576854965361",
-  appId: "1:576854965361:web:b01632afe33d766d076fd0",
-  measurementId: "G-8KM8CYTSHF"
-};
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-const auth = firebase.auth();
-
-let currentUser = null;
-
-function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
-
-function login(){
-  const email = prompt("관리자 이메일:");
-  const pw = prompt("비밀번호:");
-  auth.signInWithEmailAndPassword(email, pw)
-    .then(u=>{currentUser=u.user;alert("로그인 성공!");renderAll();})
-    .catch(e=>alert("로그인 실패: "+e.message));
-}
-
-function logout(){
-  auth.signOut().then(()=>{currentUser=null;alert("로그아웃되었습니다.");renderAll();});
-}
-
-auth.onAuthStateChanged(u=>{currentUser=u;renderAll();});
-
-async function writeNotice(){
-  if(!currentUser || currentUser.email!=="bagdoeon827@gmail.com") return alert("관리자만 작성 가능");
-  const t=document.getElementById("noticeTitle").value;
-  const c=document.getElementById("noticeContent").value;
-  if(!t||!c) return alert("내용을 입력하세요");
-  await db.collection("notices").add({title:t,content:c,date:new Date().toLocaleString()});
-  renderNotices();
-}
-
-async function deleteNotice(id){
-  if(!currentUser || currentUser.email!=="bagdoeon827@gmail.com") return alert("관리자만 삭제 가능");
-  await db.collection("notices").doc(id).delete();
-  renderNotices();
-}
-
-async function renderNotices(){
-  const box=document.getElementById("noticeList");
-  const snap=await db.collection("notices").orderBy("date","desc").get();
-  box.innerHTML="";
-  snap.forEach(doc=>{
-    const n=doc.data();
-    box.innerHTML+=`<div class='card'><b>${n.title}</b><p>${n.content}</p><small>${n.date}</small>${currentUser&&currentUser.email==="bagdoeon827@gmail.com"?`<br><button onclick="deleteNotice('${doc.id}')">삭제</button>`:""}</div>`;
-  });
-}
-
-async function ask(){
-  const name=document.getElementById("qName").value||"익명";
-  const text=document.getElementById("qText").value;
-  if(!text) return alert("질문을 입력하세요");
-  await db.collection("questions").add({name,text,answer:"",date:new Date().toLocaleString()});
-  renderQuestions();
-}
-
-async function answerQuestion(id){
-  if(!currentUser || currentUser.email!=="bagdoeon827@gmail.com") return alert("관리자만 답변 가능");
-  const ans=prompt("답변 입력:");
-  if(!ans) return;
-  await db.collection("questions").doc(id).update({answer:ans});
-  renderQuestions();
-}
-
-async function deleteQuestion(id){
-  if(!currentUser || currentUser.email!=="bagdoeon827@gmail.com") return alert("관리자만 삭제 가능");
-  await db.collection("questions").doc(id).delete();
-  renderQuestions();
-}
-
-async function renderQuestions(){
-  const list=document.getElementById("qList");
-  const snap=await db.collection("questions").orderBy("date","desc").get();
-  list.innerHTML="";
-  snap.forEach(doc=>{
-    const qd=doc.data();
-    list.innerHTML+=`<div class='card'><p><b>${qd.name}</b>: ${qd.text}</p><small>${qd.date}</small>${qd.answer?`<p style='color:var(--accent);'><b>답변:</b> ${qd.answer}</p>`:""}${currentUser&&currentUser.email==="bagdoeon827@gmail.com"?`<br><button onclick="answerQuestion('${doc.id}')">답변</button><button onclick="deleteQuestion('${doc.id}')">삭제</button>`:""}</div>`;
-  });
-}
-
-function renderAll(){
-  renderNotices();
-  renderQuestions();
-  document.getElementById("noticeWrite").style.display=(currentUser&&currentUser.email==="bagdoeon827@gmail.com")?"block":"none";
-}
-
-window.addEventListener("load",()=>{renderAll();});
-document.getElementById("lastModified").textContent=document.lastModified;
-</script>
-
-<script>
-function showProfile(name){
-  const profiles={
-    "박부건":[
-      "OMIX IT COMPANY 창립자","PJ IT COMPANY 공동창립자","2021~2023 발명 영재원 전체 수석",
-      "2023 영재원 팀 'technolage' 프로그래머","2023~2024 과학 영재원 물리과 전체 수석",
-      "부산대 연계 프로그램 1등 수료","정보+발명 융합 프로젝트 1등","정보+화학 프로젝트 3등",
-      "해커톤 1등","전국 에그드랍 대회 1등","team2 해외 개발팀장 2023~2025년", "2025년 과학 영재원 통합과 수료",
-    ],
-    "정우진":[
-      "PJ IT COMPANY 공동창립자","과학고 영재원 최우수 수료","과학기술정보통신부 장관상 수상",
-      "화학 올림피아드 장려상","부산과학전람회 특상 팀내 유일 프로그램머","전국과학전람회 특상 유일 프로그램머"
-    ]
-  };
-  const modal=document.getElementById("profileModal");
-  document.getElementById("modalName").innerText=name;
-  document.getElementById("modalContent").innerHTML=profiles[name].map(i=>`<li>${i}</li>`).join("");
-  modal.style.display="flex";
-}
-function closeProfile(){document.getElementById("profileModal").style.display="none";}
-</script>
 </body>
 </html>
