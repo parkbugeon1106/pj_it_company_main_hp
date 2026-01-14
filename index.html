@@ -43,12 +43,13 @@
       font-display: swap;
     }
 
+    /* ✅ 네이비 + 화이트 테마 */
     :root {
-      --bg: #080000;
-      --accent: #3d0000;
-      --card: #390909;
-      --button: #2b0000;
-      --text: #efefef;
+      --bg: #001f3f;
+      --accent: #0074D9;
+      --card: #003366;
+      --button: #005fa3;
+      --text: #ffffff;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -103,10 +104,17 @@
       margin: 20px auto;
     }
 
+    .card ul {
+      list-style: disc;
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      color: #aaa;
+      color: #ccc;
       border-top: 1px solid var(--accent);
     }
   </style>
@@ -144,8 +152,19 @@
 <section id="team">
   <h2>팀</h2>
   <div class="card">
-    <p><b>박부건</b> – CEO / AI · Web Developer</p>
-    <p><b>정우진</b> – CEO / AI · Hardware Developer</p>
+    <p><b>박부건</b> – CEO / AI · Web, Software Developer</p>
+    <ul>
+      <li>오랜 경험을 바탕으로 다양한 AI 제작</li>
+      <li>머신 러닝, AI 코드 검수, 기능 구현, 서버 제작/관리</li>
+      <li>사용 언어: Python, C, C++, Java, JavaScript, HTML, CSS, PHP</li>
+    </ul>
+
+    <p style="margin-top:30px;"><b>정우진</b> – CEO / AI · Hardware Developer</p>
+    <ul>
+      <li>AI 기반 하드웨어 시스템 및 로직 설계</li>
+      <li>임베디드 시스템, 센서 제어, 디바이스 개발</li>
+      <li>FPGA, Arduino, Raspberry Pi 등 다양한 플랫폼 경험</li>
+    </ul>
   </div>
 </section>
 
